@@ -6,6 +6,8 @@ This repository contains the solutions of all the assignments which were given i
 
 For all the Assignments, there are seperate JuPyter notebooks. For each problem, there is a seperate `.py` file containing the Python code of the same.
 
+Code has been briefly explained in their corresponding Jupyter notebook. Find the assignment which the problem belongs to and refer to the notebook of that assignment.
+
 ### All Requirements
 You need to have the below mentioned libraries/packages to be set up in your environment.
 - NumPy
