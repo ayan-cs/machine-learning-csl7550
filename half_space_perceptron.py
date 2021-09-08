@@ -2,7 +2,7 @@
 
 import pandas as pd
 import numpy as np
-df = pd.read_csv('diabetes.csv')
+df = pd.read_csv('./datasets/diabetes.csv')
 
 Y = np.array(df['Outcome'])
 X = np.array([list(df.loc[i][:-1]) for i in range(len(df))])
