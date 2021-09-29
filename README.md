@@ -15,6 +15,7 @@ You need to have the below mentioned libraries/packages to be set up in your env
 - PuLP
 - Scikits-learn
 - Pandas
+- cvxopt
 
 Find the `requirements.txt` file and run the below command to install all the above at one go : `pip install -r requirements.txt`
 
@@ -34,3 +35,15 @@ You can use any other LP solver also. The optimization of the Logistic Regressio
 Select an appropriate dataset, select the independent features (input features) and the dependent feature (target feature), perform dataset split and **train a linear regression classifier**. Solve for the parameters of the machine to minimize the squared error loss using
 1. **Pseudo-inverse method**
 2. **Gradient descent**
+
+### Assignment-3 Questions
+Use a dataset of your  choice and implement the
+1. **Hard SVM learning rule by solving a Quadratic Program using the convex optimization package `cvxopt_solvers.qp`**
+2. **Soft SVM learning rule using  `cvxopt_solvers.qp`**
+
+For implementing the Hard SVM learning rule, the dataset needs to be made linearly
+separable by removing some of the training points.
+
+3. **Repeat (2) but use the stochastic gradient descent algorithm for optimization**
+
+For each experiment, identify the training data points which are the support vectors. For the soft SVM formulation conduct experiments with different values of the regularization parameter and interpret the results in terms of number of support vectors, margin value, training data and test data classification accuracy.
